@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>test</title>
+  <meta name="yandex-verification" content="bbb538bb83a1574e" />
+</head>
+<body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(91069506, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+		triggerEvent:true,
+        ecommerce:"dataLayer"
+   });
+   
+   window.dataLayer = window.dataLayer || [];
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/91069506" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+<p style="text-align:center">Test E-com</p>
+<button onclick="viewList()">Список товара</button>
+<button onclick="clickInList()">Клик по товару из списка</button>
+<button onclick="prodView()">Просмотр товара</button>
+<button onclick="addBasket()">Добавление товара в корзину</button>
+<button onclick="delBasket()">Удаление товара из корзины</button>
+<button onclick="purchase()">Покупка</button>
+<button onclick="viewAds()">Просмотр внутренней рекламы</button>
+<button onclick="clickAds()">Клики внутренней рекламы</button>
+
+<script type="text/javascript">
+	function addBasket(){
+		dataLayer.push({
+			"ecommerce": {
+				"currencyCode": "RUB",    
+				"add": {
+					"products": [
+						{
+							"id": "43522",
+							"name": "Сумка Яндекс",
+							"price": 123,
+							"brand": "Яндекс",
+							"category": "Аксессуары/Сумки",
+							"quantity": 1,
+							"list": "Выдача категории",
+							"position": 2
+						}
+					]
+				}
+			}
+		});
+		return true;
+	};
+	
+	function viewList(){
+		dataLayer.push({
+			"ecommerce": {
+				"currencyCode": "RUB",
+				"impressions": [
+					{
+						"id": "P15432",
+						"name" : "Футболка",
+						"price": 477.60,
+						"brand": "Яндекс / Яndex",
+						"category": "Одежда/Мужская одежда/Футболки",
+						"variant" : "Красный цвет",
+						"list": "Search",
+						"position": 1
+					},
+					{
+						"id": "P15435",
+						"name" : "Футболка",
+						"price": 500.60,
+						"brand": "Яндекс / Яndex",
+						"category": "Одежда/Мужская одежда/Футболки",
+						"variant" : "Синий цвет",
+						"list": "Search",
+						"position": 2
+					}
+				]
+			}
+		});
+		return true;
+	};
+	
+	function clickInList(){
+			dataLayer.push({
+			"ecommerce": {
+				"currencyCode": "RUB",
+				"click": {
+					"products": [
+						{
+							"id": "39084",
+							"name": "Термостакан Яндекс",
+							"price": 1089.69,
+							"brand": "Яндекс / Яndex",
+							"category": "Товары для дома/Посуда/Термосы и термокружки",
+							"variant": "Красный цвет",
+							"list": "Search",
+							"position": 1
+						}
+					]
+				}
+			}
+		});		
+		return true;
+	};
+	
+	function prodView(){
+		dataLayer.push({
+			"ecommerce": {
+				"currencyCode": "RUB",
+				"detail": {
+					"products": [
+						{
+							"id": "P15432",
+							"name" : "Футболка",
+							"price": 477.60,
+							"brand": "Яндекс / Яndex",
+							"category": "Одежда/Мужская одежда/Футболки",
+							"variant" : "Красный цвет",
+							"list": "Результаты поиска",
+							"position": 1
+						}
+					]
+				}
+			}
+		});
+		return true;
+	};
+	
+	function delBasket(){
+		dataLayer.push({
+			"ecommerce": {
+				"currencyCode": "RUB",    
+				"remove": {
+					"products": [
+						{
+							"id": "43521",
+							"name": "Сумка Яндекс",
+							"price": 654.32,
+							"brand": "Яндекс / Яndex",
+							"category": "Аксессуары/Сумки",
+							"quantity": 1,
+							"list": "Выдача категории",
+							"position": 2
+						}
+					]
+				}
+			}
+		});
+		return true;
+	};
+	
+	function purchase(){
+		dataLayer.push({
+		"ecommerce": {
+			"currencyCode": "RUB",
+			"purchase": {
+				"actionField": {
+					"id" : "TRX987"
+				},
+				"products": [
+					{
+						"id": "25341",
+						"name": "Толстовка Яндекс мужская",
+						"price": 1345.26,
+						"brand": "Яндекс / Яndex",
+						"category": "Одежда/Мужская одежда/Толстовки и свитшоты",
+						"variant": "Оранжевый цвет",
+						"quantity": 1,
+						"list": "Одежда",
+						"position": 1
+					},
+					{
+						"id": "25314",
+						"name": "Толстовка Яндекс женская",
+						"price": 1543.62,
+						"brand": "Яндекс / Яndex",
+						"category": "Одежда/Женская одежда/Толстовки и свитшоты",
+						"variant": "Белый цвет",
+						"quantity": 3,
+						"list": "Толстовки",
+						"position": 2
+					}
+				]
+			}
+		}
+	});		
+		return true;
+	};
+	
+	function viewAds(){
+		dataLayer.push({
+			"ecommerce": {
+				"promoView": {
+					"promotions": [
+						{
+							"id": "BF001",          
+							"name": "Черная пятница",
+							"creative": "Баннер_1",
+							"position": "Слот1"
+						},
+						{
+							"id": "SUMMER002",
+							"name": "Летние распродажи",
+							"creative": "Баннер_3",
+							"position": "Слот2"
+						}
+					]
+				}
+			}
+		});
+		return true;
+	};
+	
+	function clickAds(){
+		dataLayer.push({
+			"ecommerce": {
+				"promoClick": {
+					"promotions": [
+						{
+							"id": "BF001",          
+							"name": "Черная пятница",
+							"creative": "Баннер_1",
+							"position": "Слот1"
+						}
+					]
+				}
+			}
+		});
+		return true;
+	};	
+</script>
+
+<a href="https://clck.ru/h2LfJ" target="_blank">ссыль</a>
+</body>
+</html>
