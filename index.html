@@ -26,13 +26,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true,
-        ecommerce:"dataLayer"
+        ecommerce:"dataLayer",
+	triggerEvent: true
    });
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/91069506" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script type="text/javascript">
-    window.dataLayer = window.dataLayer || [];
+	window.dataLayer = window.dataLayer || [];
+	document.addEventListener('yacounter91069506inited', function(){console.log('Сч-ик загружен')});
 </script>
 	
 <p style="text-align:center">Test E-com</p>
