@@ -49,7 +49,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <button onclick="ytm()">Тест Event для YTM</button>
 <script type="text/javascript">
 	function ytn(){
-		//test
+		dataLayer.push({
+			event: 'form_submit',
+		  	form_id: '12345',
+		  	form_name: 'подписка'
+		});
 	};
 	function addBasket(){
 		dataLayer.push({
