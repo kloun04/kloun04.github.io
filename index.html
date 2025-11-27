@@ -43,11 +43,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	window.test_var = 0;
 
 	document.addEventListener('click', (event) => {
-		dataLayer.push{
+		dataLayer.push({
 			'event': 'click',
 			'element': event.target,
 			'type': event.type
-		}
+		});
 	});
 </script>
 	
