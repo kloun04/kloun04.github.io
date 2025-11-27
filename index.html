@@ -41,6 +41,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		console.log('Сч-ик загружен');
 	});
 	window.test_var = 0;
+
+	document.addEventListener('click', (event) => {
+		dataLayer.push{
+			'event': 'click',
+			'element': event.target,
+			'type': event.type
+		}
+	});
 </script>
 	
 <p style="text-align:center">Test E-com</p>
