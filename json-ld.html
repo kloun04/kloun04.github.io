@@ -119,17 +119,20 @@
 <body>
     <script type="application/ld+json">
         {  
-        "@context": "http://schema.org",
-        "@graph": [
-            {
-            "@type": "NewsArticle",
-            "@id": "Это заголовок разметки JSON-LD",  
-            "datePublished": "2026-10-30T16:00:00Z",
-            "author": {"@type": "Person", "name": "Иван Иванов"}
-            }
+        "@type": "NewsArticle",
+          "@id": "https://kloun04.github.io/json-ld",
+          "headline": "Это заголовок разметки JSON-LD",
+          "alternativeHeadline": "Температура в ноябре превысила 12 °С",
+          "datePublished": "2026-10-30T16:00:00Z",
+          "text": "Лид. Дворы‑колодцы в Петербурге — это не просто узкие пространства между домами, а целые миры со своей атмосферой, легендами и акустикой. Если вы думаете, что все они одинаковые и «просто тёмные», эта статья вас переубедит. Расскажу про три двора, каждый из которых раскрывает город с неожиданной стороны — и подскажу, как их найти...",
+          "author": [
+              {"@type": "Person", "name": "Иван Иванов"}, 
+              {"@type": "Person", "name": "Петр Петров"}
+           ],
+          "url": "https://kloun04.github.io/json-ld#text"
         }
     </script>
-    <article class="article-container">
+    <article class="article-container" id="text">
         <h1>Три петербургских двора‑колодца, где время будто застыло</h1>
 
         <p><strong>Лид.</strong> Дворы‑колодцы в Петербурге — это не просто узкие пространства между домами, а целые
